@@ -79,6 +79,10 @@ struct ContentView: View {
             totalScore += 10
         } else {
             scoreTitle = "Wrong"
+            if totalScore == 0 {
+            } else {
+                totalScore -= 10
+            }
         }
 
         showingScore = true
